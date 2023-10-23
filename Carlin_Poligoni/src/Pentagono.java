@@ -1,7 +1,7 @@
 import java.lang.Math;
 
 public class Pentagono extends PoligonoReg{
-    public Pentagono(float lato){
+    public Pentagono(float lato) throws Exception {
         super(lato, 5);
     }
 

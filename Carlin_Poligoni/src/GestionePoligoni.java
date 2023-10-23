@@ -30,7 +30,7 @@ public class GestionePoligoni {
     public String toString() {
         String s = "";
         for (int i = 0; i < dimLogica; i++) {
-            s += arrPoligoni[i].toString();
+            s += arrPoligoni[i].toString()+"\n";
         }
         return s;
     }

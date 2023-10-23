@@ -3,9 +3,13 @@ public class PoligonoReg {
     private int nLati;
 
 
-    public PoligonoReg(float l, int nL){
-        lato=l;
-        nLati=nL;
+    public PoligonoReg(float l, int nL)throws Exception{
+        if(l>0) {
+            lato = l;
+            nLati = nL;
+        }else {
+            throw new Exception("Il lato non puo essere un numero negativo o pari a zero!!!");
+        }
     }
 
     public float getLato() {

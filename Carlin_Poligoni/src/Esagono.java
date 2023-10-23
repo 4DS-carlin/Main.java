@@ -1,5 +1,5 @@
 public class Esagono extends PoligonoReg{
-    public Esagono(float lato){
+    public Esagono(float lato) throws Exception {
         super(lato, 6);
     }
 

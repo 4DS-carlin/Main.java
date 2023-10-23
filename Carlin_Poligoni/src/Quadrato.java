@@ -1,7 +1,7 @@
 import java.lang.Math;
 
 public class Quadrato extends PoligonoReg{
-    public Quadrato (float l){
+    public Quadrato (float l) throws Exception {
         super(l, 4);
     }
 

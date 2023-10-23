@@ -3,7 +3,7 @@ public class Rombo extends PoligonoReg{
     private float dMag;
     private float dMin;
 
-    public Rombo(float l, float dm, float dM){
+    public Rombo(float l, float dm, float dM) throws Exception {
         super(l, 4);
         dMag=dM;
         dMin=dm;
