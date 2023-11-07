@@ -33,6 +33,8 @@ abstract public class PoligonoReg {
 
     abstract public float area();
 
+    abstract public String disegna(char s);
+
     public String toString(){
         return "lunghezza lato: "+lato+" numero lati: "+nLati;
     }

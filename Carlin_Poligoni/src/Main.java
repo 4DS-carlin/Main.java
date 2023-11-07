@@ -25,7 +25,7 @@ public class Main {
                 Esagono e1 = new Esagono(lato);
                 g1.inserisciPoligono(q1);
                 g1.inserisciPoligono(e1);
-                r1=new Rombo(5,3,4);
+                r1=new Rombo(101,3,4);
                 fatto=true;
             }catch (InputMismatchException e){
                 System.out.println("Errore: Input non valido");

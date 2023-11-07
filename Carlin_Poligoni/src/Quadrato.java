@@ -19,7 +19,7 @@ public class Quadrato extends PoligonoReg{
 
     public String disegna(char s){
         String disegno="";
-        float l=super.getLato();
+        float l=getLato();
         for(int i=0; i<l; i++){
             if(i==0||i==l-1){
                 for(int j=0; j<l; j++){

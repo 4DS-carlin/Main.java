@@ -26,7 +26,7 @@ public class Rombo extends PoligonoReg{
     }
 
     public String disegna(char s){
-        float l=super.getLato();
+        float l=getLato();
         String disegno= "";
         for(int i = 0; i < l; i++) {
             for (int j = 0; j < l - i - 1; j++) {
@@ -41,7 +41,6 @@ public class Rombo extends PoligonoReg{
                 disegno = disegno + s;
             }
 
-            // Move to the next line
             disegno = disegno + "\n";
         }
 

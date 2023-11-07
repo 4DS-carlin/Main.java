@@ -17,4 +17,8 @@ public class Pentagono extends PoligonoReg{
     public String toString(){
         return "PENTAGONO: "+super.toString();
     }
+
+    public String disegna(char s){
+        return " ";
+    }
 }

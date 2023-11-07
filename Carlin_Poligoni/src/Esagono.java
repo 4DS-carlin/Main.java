@@ -15,4 +15,8 @@ public class Esagono extends PoligonoReg{
     public String toString(){
         return "ESAGONO: "+super.toString();
     }
+
+    public String disegna(char s){
+        return " ";
+    }
 }
