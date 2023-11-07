@@ -14,4 +14,7 @@ public class Pentagono extends PoligonoReg{
     public float apotema(){
         return (float) (super.getLato() * 0.688);
     }
+    public String toString(){
+        return "PENTAGONO: "+super.toString();
+    }
 }

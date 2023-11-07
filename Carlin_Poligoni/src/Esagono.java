@@ -12,4 +12,7 @@ public class Esagono extends PoligonoReg{
     public float apotema(){
         return (float) (0.86*getLato());
     }
+    public String toString(){
+        return "ESAGONO: "+super.toString();
+    }
 }

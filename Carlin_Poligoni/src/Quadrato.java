@@ -12,4 +12,30 @@ public class Quadrato extends PoligonoReg{
     public double diagonale(){
         return Math.sqrt((getLato()*getLato())*2);
     }
+
+    public String toString(){
+        return "QUADRATO: "+super.toString();
+    }
+
+    public String disegna(char s){
+        String disegno="";
+        float l=super.getLato();
+        for(int i=0; i<l; i++){
+            if(i==0||i==l-1){
+                for(int j=0; j<l; j++){
+                    disegno=disegno+s;
+                }
+                disegno=disegno+"\n";
+            }
+            else{
+                disegno=disegno+s;
+                for(int r=0; r<l-2; r++){
+                    disegno=disegno+" ";
+                }
+                disegno=disegno+s+"\n";
+            }
+        }
+        return disegno;
+    }
 }
+

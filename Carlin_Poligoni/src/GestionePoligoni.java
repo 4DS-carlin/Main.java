@@ -12,6 +12,10 @@ public class GestionePoligoni {
         dimLogica++;
     }
 
+    public PoligonoReg getPoligono(int p){
+        return arrPoligoni[p];
+    }
+
     public PoligonoReg poligonoConLatoPiuLungo() {
         PoligonoReg max = arrPoligoni[0];
         for (int i = 1; i < dimLogica; i++) {
