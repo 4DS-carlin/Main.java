@@ -7,7 +7,7 @@ public class Collezione {
     public Collezione(String nome, String luogo, int numOpere){
         this.nome=nome;
         this.luogo=luogo;
-        this.dimLog=numOpere;
+        this.dimLog=-1;
         opere=new OperaDarte[numOpere];
     }
 
@@ -31,5 +31,22 @@ public class Collezione {
         return opere[pos];
     }
 
+
+    public void inserisci(OperaDarte o){
+        dimLog++;
+        opere[dimLog]=o;
+    }
+    public String stampa(){
+        String collezione="_____COLLEZIONE_____\n";
+        collezione=collezione+"nome: "+nome+" luogo: "+luogo+"\n";
+        for(int i=0; i<dimLog+1; i++){
+            collezione=collezione+i+". "+opere[i].toString()+"\n";
+        }
+        return collezione;
+    }
+
+    public double occupazione(int pos){
+        return opere[pos].printIngombro();
+    }
 
 }
