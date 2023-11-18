@@ -34,7 +34,7 @@ public class Main {
                 larghezza=input.nextInt();
                 System.out.println("Inserisci l'altezza dell'opera: ");
                 altezza=input.nextInt();
-                Quadro q=new Quadro(titolo, artista, altezza, larghezza);
+                Quadro q=null;
                 c.inserisci(q);
             }else{
                 input=new Scanner(System.in);
@@ -48,7 +48,7 @@ public class Main {
                 altezza=input.nextInt();
                 System.out.println("Inserisci la profondita dell'opera: ");
                 profondita=input.nextInt();
-                Scultura s=new Scultura(titolo, artista, altezza, larghezza, profondita);
+                Scultura s=null;
                 c.inserisci(s);
             }
         }
