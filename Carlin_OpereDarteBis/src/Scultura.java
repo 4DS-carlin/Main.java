@@ -4,12 +4,16 @@ public class Scultura extends OperaDarte{
     private float profondita;
     private Supporto s;
 
-    public Scultura(String titolo, String artista, float altezza, float larghezza, float profondita, Supporto s){
+    public Scultura(String titolo, String artista, float altezza, float larghezza, float profondita, Supporto s)throws Exception{
         super(titolo, artista);
         this.altezza=altezza;
         this.profondita=profondita;
         this.larghezza=larghezza;
-        this.s=s;
+        if(s.getLarghezza()>=larghezza && s.getProondita()>=profondita) {
+            this.s = s;
+        }else{
+            throw new Exception("Il supporto e troppo piccolo.");
+        }
     }
     public float getAltezza() {
         return altezza;

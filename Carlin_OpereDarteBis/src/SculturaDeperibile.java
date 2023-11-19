@@ -4,7 +4,7 @@ public class SculturaDeperibile extends Scultura{
     private float deperibilita;
 
 
-    public SculturaDeperibile(String titolo, String artista, float altezza, float larghezza, float profondita, String materiale, int eta, float deperibilita,Supporto s) {
+    public SculturaDeperibile(String titolo, String artista, float altezza, float larghezza, float profondita, String materiale, int eta, float deperibilita,Supporto s)throws Exception{
         super(titolo, artista, altezza, larghezza, profondita, s);
         this.materiale=materiale;
         this.eta=eta;

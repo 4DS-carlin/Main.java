@@ -3,60 +3,28 @@ public class Main {
     public static void main(String[] args) {
         Scanner input=new Scanner(System.in);
         int dimfis;
-        String nomec;
-        String luogoc;
-        int scelta;
-        System.out.println("Inserisci quante opere d'arte vuoi inserire nella collezione: ");
-        dimfis=input.nextInt();
-        input=new Scanner(System.in);
-        System.out.println("Inserisci il nome della collezione: ");
-        nomec=input.nextLine();
-        System.out.println("Inserisci il luogo della colleione: ");
-        luogoc=input.nextLine();
-
-        Collezione c=new Collezione(nomec, luogoc, dimfis);
-        String titolo;
-        String artista;
-        float altezza;
-        float larghezza;
-        float profondita;
-        for(int i=0; i < dimfis; i++){
-            input=new Scanner(System.in);
-            System.out.println("Inserisci: \n1.Per aggiungere un quadro alla collezione.\n2.Per isnerire una scultura nella collezione. ");
-            scelta=input.nextInt();
-            if(scelta==1){
-                input=new Scanner(System.in);
-                System.out.println("Inserisci il titolo dell'opera: ");
-                titolo=input.nextLine();
-                System.out.println("Inserisci il nome dell'artista dell'opera: ");
-                artista=input.nextLine();
-                System.out.println("Inserisci la larghezza dell'opera: ");
-                larghezza=input.nextInt();
-                System.out.println("Inserisci l'altezza dell'opera: ");
-                altezza=input.nextInt();
-                Quadro q=null;
-                c.inserisci(q);
-            }else{
-                input=new Scanner(System.in);
-                System.out.println("Inserisci il titolo dell'opera: ");
-                titolo=input.nextLine();
-                System.out.println("Inserisci il nome dell'artista dell'opera: ");
-                artista=input.nextLine();
-                System.out.println("Inserisci la larghezza dell'opera: ");
-                larghezza=input.nextInt();
-                System.out.println("Inserisci l'altezza dell'opera: ");
-                altezza=input.nextInt();
-                System.out.println("Inserisci la profondita dell'opera: ");
-                profondita=input.nextInt();
-                Scultura s=null;
-                c.inserisci(s);
-            }
+        float dep;
+        dep=input.nextFloat();
+        try {
+            Collezione coll=new Collezione("coll", "susa", 3);
+            Cornice c = new Cornice(15, 15, 1);
+            Quadro q = new Quadro("Notte Stellata", "Carlin",9,9,c);
+            Supporto s=new Supporto(2, 5,5);
+            Scultura sc=new Scultura("controller", "Ema", 10, 5,5, s);
+            SculturaDeperibile sd=new SculturaDeperibile("PC", "Emanuele", 10F, 5, 5, "legno", 365, dep,s);
+            System.out.println("Ingombro cornice: "+c.printIngombro());
+            System.out.println("Ingombro quadro: "+q.printIngombro());
+            System.out.println("Ingombro supporto: "+s.printIngombro());
+            System.out.println("Ingombro scultura: "+sc.printIngombro());
+            System.out.println("Ingombro scultura deperibile: "+sd.printIngombro());
+            coll.inserisci(q);
+            coll.inserisci(sc);
+            coll.inserisci(sd);
+            System.out.println(coll.stampa());
+        }catch (Exception e){
+            System.out.println("Problema riscontrato: "+ e.getMessage());
         }
-        System.out.println(c.stampa());
-        int pos;
-        System.out.println("Inserisci il numero corrispondente all'opera di cuoi vuoi sapere l'ingombro: ");
-        pos=input.nextInt();
-        System.out.println(c.occupazione(pos));
+
 
     }
 }
