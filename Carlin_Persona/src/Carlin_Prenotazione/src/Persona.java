@@ -1,3 +1,5 @@
+package Carlin_Prenotazione.src;
+
 import org.apache.commons.validator.routines.EmailValidator;
 
 public class Persona {

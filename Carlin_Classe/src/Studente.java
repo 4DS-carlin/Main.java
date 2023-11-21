@@ -25,21 +25,21 @@ public class Studente {
     }
 
 
-    private boolean checkString(String stringa)throws Exception{
+    private boolean checkString(String stringa)throws Exception {
         String[] stringaA;
-        if(stringa.contains(" ")){
-            stringaA=stringa.split(" ");
-            for(int i=0; i< stringaA.length; i++){
-                if (stringaA[i].charAt(0)<=65 || stringaA[i].charAt(0)>=90){
+        if (stringa.contains(" ")) {
+            stringaA = stringa.split(" ");
+            for (int i = 0; i < stringaA.length; i++) {
+                if (stringaA[i].charAt(0) <= 65 || stringaA[i].charAt(0) >= 90) {
                     throw new Exception("iniziale stringa non valida");
                 }
-                for(int j=1; j<stringaA[i].length(); j++) {
+                for (int j = 1; j < stringaA[i].length(); j++) {
                     if (stringaA[i].charAt(j) < 97 || stringaA[i].charAt(j) > 122) {
                         throw new Exception("Nella stringa sono presenti caratteri speciali");
                     }
                 }
             }
-        }else {
+        } else {
             if (stringa.charAt(0) <= 65 || stringa.charAt(0) >= 90) {
                 throw new Exception("iniziale stringa non valida");
             }
@@ -51,24 +51,16 @@ public class Studente {
         }
         return true;
     }
-
-
     public void setNome(String nome)throws Exception{
         if(checkString(nome)==true) {
             this.nome=nome;
         }
     }
-
-
     public void setCognome(String cognome)throws Exception{
         if(checkString(cognome)==true) {
             this.cognome=cognome;
         }
     }
-
-
-
-
     public String toString() {
         return "Studente{" + "nome='" + nome + '\'' + ", cognome='" + cognome + '\'' + '}';
     }

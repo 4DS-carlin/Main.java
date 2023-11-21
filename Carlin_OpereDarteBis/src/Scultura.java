@@ -10,7 +10,7 @@ public class Scultura extends OperaDarte{
         this.profondita=profondita;
         this.larghezza=larghezza;
         if(s.getLarghezza()>=larghezza && s.getProondita()>=profondita) {
-            this.s = s;
+            this.s = new Supporto(s.getAltezza(), s.getLarghezza(), s.getProondita());
         }else{
             throw new Exception("Il supporto e troppo piccolo.");
         }

@@ -8,7 +8,7 @@ public class Quadro extends  OperaDarte{
         this.larghezza = larghezza;
         this.altezza = altezza;
         if (c.getAltezza() >= altezza + c.getSpessore() * 2 && c.getLarghezza() >= larghezza + c.getSpessore() * 2){
-            this.c = c;
+            this.c = new Cornice(c.getAltezza(), c.getLarghezza(), c.getSpessore());
         }else{
             throw new Exception("La cornice e troppo piccola.");
         }
