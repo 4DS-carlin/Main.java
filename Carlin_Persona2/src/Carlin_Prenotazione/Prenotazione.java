@@ -1,4 +1,6 @@
-package Carlin_Prenotazione.src;
+package Carlin_Prenotazione;
+
+import Carlin_Prenotazione.Persona;
 
 public class Prenotazione {
     //attributi

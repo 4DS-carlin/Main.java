@@ -1,4 +1,4 @@
-package Carlin_Prenotazione.src;
+package Carlin_Prenotazione;
 
 import org.apache.commons.validator.routines.EmailValidator;
 
@@ -9,7 +9,7 @@ public class Persona {
     private String codFisc;
     private String datanascita;
     private String email;
-    private static int numeroInstanzie;
+    protected static int numeroInstanzie;
 
     //metodi
     public Persona(){

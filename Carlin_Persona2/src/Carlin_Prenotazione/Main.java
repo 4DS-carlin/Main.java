@@ -1,4 +1,4 @@
-package Carlin_Prenotazione.src;
+package Carlin_Prenotazione;
 
 import java.util.Scanner;
 
