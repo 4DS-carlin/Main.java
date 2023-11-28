@@ -1,0 +1,21 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="progetto:jar2">
+    <output-path>$PROJECT_DIR$/out/artifacts/progetto_jar2</output-path>
+    <root id="archive" name="progetto.jar">
+      <element id="module-output" name="Carlin_Ora" />
+      <element id="module-output" name="Carlin_Poligoni" />
+      <element id="module-output" name="Carlin_Punto" />
+      <element id="module-output" name="Carlin_Cerchio" />
+      <element id="module-output" name="Carlin_RaccoltaMele" />
+      <element id="module-output" name="Carlin_Classe" />
+      <element id="module-output" name="Carlin_Emanuele" />
+      <element id="module-output" name="Carlin_OpereDarte" />
+      <element id="module-output" name="Carlin_Persona" />
+      <element id="module-output" name="Carlin_Prenotazione" />
+      <element id="module-output" name="Carlin_OpereDarteBis" />
+      <element id="module-output" name="Carlin_Persona" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/Carlin_Prenotazione/commons-validator-1.7.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/Carlin_Persona/src/commons-validator-1.7.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

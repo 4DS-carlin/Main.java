@@ -17,7 +17,6 @@ public class Persona {
     }
 
     public Persona(String cognome, String nome, String codFisc, String datanascita, String email)throws Exception{
-        this(); //dobbiamo utilizzarlo per aggiornare il numero di instanzie, non vedo una ragione per non utlizzarlo
         setCognome(cognome);
         setNome(nome);
         setCodFisc(codFisc);

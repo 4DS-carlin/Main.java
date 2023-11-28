@@ -6,6 +6,7 @@ public class Studente {
     public Studente(String n, String c)throws Exception{
         setNome(n);
         setCognome(c);
+
     }
 
 
