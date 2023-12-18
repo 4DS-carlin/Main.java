@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Aereodromo/Aereodromo.iml" filepath="$PROJECT_DIR$/Aereodromo/Aereodromo.iml" />
       <module fileurl="file://$PROJECT_DIR$/Carlin_Cerchio/Carlin_Cerchio.iml" filepath="$PROJECT_DIR$/Carlin_Cerchio/Carlin_Cerchio.iml" />
       <module fileurl="file://$PROJECT_DIR$/Carlin_Classe/Carlin_Classe.iml" filepath="$PROJECT_DIR$/Carlin_Classe/Carlin_Classe.iml" />
       <module fileurl="file://$PROJECT_DIR$/Carlin_Emanuele.iml" filepath="$PROJECT_DIR$/Carlin_Emanuele.iml" />
