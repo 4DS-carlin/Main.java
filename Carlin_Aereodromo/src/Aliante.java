@@ -1,15 +1,12 @@
 public class Aliante extends Aereomobile{
     private int efficienzaAereodinamica;
-
     public Aliante(String sigla, int efficienzaAereodinamica) {
         this.sigla=sigla;
         this.efficienzaAereodinamica = efficienzaAereodinamica;
     }
-
     public int getEfficienzaAereodinamica() {
         return efficienzaAereodinamica;
     }
-
 
     public boolean isSuperior(Aereomobile x) {
         if (x!=null && (x instanceof Aliante)) {
@@ -18,7 +15,6 @@ public class Aliante extends Aereomobile{
         }
         return false;
     }
-
     @Override
     public boolean equals(Object oggetto) {
         Boolean verifica = false;
@@ -34,12 +30,8 @@ public class Aliante extends Aereomobile{
 
         return verifica;
     }
-
     @Override
     public String toString() {
-        return "Aliante{" +
-                "sigla='" + sigla + '\'' +
-                ", efficienzaAereodinamica=" + efficienzaAereodinamica +
-                '}';
+        return "Aliante{" + "sigla='" + sigla + '\'' + ", efficienzaAereodinamica=" + efficienzaAereodinamica + '}';
     }
 }
